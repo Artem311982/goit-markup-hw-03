@@ -25,16 +25,32 @@
     letter-spacing: 0.03em;
 }
 
-
 .link {
+    
     text-decoration: none;
     color: currentColor;
+    
 }
 
 .list {
-    list-style: none;
-    padding: 10;
     
+    list-style: none;
+    padding: 0;   
+}
+
+.list-btn {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.list-item-btn {
+    display: inline;
+    }
+
+.btn {
+    text-align: center;
+
 }
 
 .header {
@@ -110,8 +126,8 @@
     color: var(--other-color-wight);
 }
 
-.list-item-btn:hover,
-.list-item-btn:focus {
+.btn:hover,
+.btn:focus {
     color: var(--light-txt-cl);
     background-color: var(--accent-bg-cl);
 }
@@ -163,7 +179,5 @@ p {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.ansa {
-outline: 2px, solid red;
-}
+
 
