@@ -1,3 +1,7 @@
+html {
+    box-sizing: border-box;
+}
+
 :root {
 /* Fonts */
 --main-font: "Roboto Regular", sans-serif;
@@ -17,12 +21,40 @@
 --other-color-wight: #FFFFFF;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* reset */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display:block;
+}
+
+
+
 .page {
     font-family: var(--main-font);
     font-weight: ;
     color: var(--main-txt-cl);
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
+}
+
+.group-link {
+    margin-right: 50px;
 }
 
 .link {
@@ -32,25 +64,43 @@
     
 }
 
-.list {
-    
+.list {    
+    margin: 0;
+    padding: 0;
+    width: 1170px;
+}
+
+.main {
     list-style: none;
-    padding: 0;   
+    margin-top: 174px;
+    margin-right: 215px;
+    margin-bottom: 346px;
+    margin-left: 215px;
+}
+
+.list-item {
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
 .list-btn {
     list-style: none;
     padding: 0;
-    text-align: center;
+    
 }
 
 .list-item-btn {
-    display: inline;
+    
     }
 
 .btn {
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    
     text-align: center;
-
+    letter-spacing: 0.03em;
 }
 
 .header {
@@ -135,6 +185,7 @@
 .footer {
     background-color: var(--other-bg-cl);
     color: var(--other-color-wight);
+
 }
 
 h2 {
